@@ -2,9 +2,8 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Divina Loja - Produtos com Propósito</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -13,7 +12,7 @@
       color: white;
     }
     header {
-      background: url('https://i.imgur.com/jRoUkcY.jpg') center center/cover no-repeat;
+      background: linear-gradient(to right, #3a3a3a, #1a1a1a);
       padding: 60px 20px;
       text-align: center;
       font-size: 2.5rem;
@@ -62,28 +61,26 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .contato {
-      background: #111;
-      padding: 30px;
-      text-align: center;
-    }
-    .contato a {
-      display: inline-block;
-      margin: 10px;
-      color: white;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
-    .contato a i {
-      margin-right: 8px;
-      color: #4CAF50;
-    }
     footer {
       text-align: center;
       padding: 20px;
       font-size: 0.9rem;
-      background-color: #000;
+      background-color: #111;
       color: #ccc;
+    }
+    .contato {
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .contato a {
+      display: inline-block;
+      margin: 10px;
+      color: #4CAF50;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    .contato a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -112,27 +109,25 @@
   </div>
 
   <div class="contato">
-    <h2>Fale Conosco</h2>
-    <a href="https://wa.me/551178003757" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-    <a href="https://www.instagram.com/jesus_vive_3_3" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    <h2>Entre em contato</h2>
+    <a href="https://wa.me/551178003757" target="_blank">WhatsApp: (11) 7800-3757</a><br/>
+    <a href="https://www.instagram.com/jesus_vive_3_3" target="_blank">Instagram: @jesus_vive_3_3</a>
   </div>
 
-  <footer>
-    Site criado para inspirar e abençoar vidas. Divina Loja!
-  </footer>
+  <footer>Site criado para inspirar e abençoar vidas. Divina Loja!</footer>
 
   <script>
     const versiculos = [
       "Porque vivemos por fé, e não pelo que vemos. - 2 Coríntios 5:7",
       "O que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé. - 1 João 5:4",
       "E, assim, a fé vem pelo ouvir, e o ouvir, pela palavra de Cristo. - Romanos 10:17",
-      "Ora, a fé é a certeza de coisas que se esperam, a convicção de fatos que não se veem. - Hebreus 11:1",
+      "Mas o meu justo viverá pela fé. - Hebreus 10:38",
+      "Ora, a fé é a certeza de coisas que se esperam. - Hebreus 11:1",
       "Tudo posso naquele que me fortalece. - Filipenses 4:13",
+      "Façam tudo com amor. - 1 Coríntios 16:14",
       "O amor tudo sofre, tudo crê, tudo espera, tudo suporta. - 1 Coríntios 13:7",
-      "Nisto todos conhecerão que vocês são meus discípulos: se tiverem amor uns aos outros. - João 13:35",
-      "Entregue suas aflições ao Senhor , e ele cuidará de você. - Salmos 55:22",
-      "Arrependam-se, pois, e voltem-se para Deus. - Atos 3:19",
-      "Esta é minha ordem: Seja forte e corajoso! - Josué 1:9"
+      "O Senhor é o meu pastor; nada me faltará. - Salmos 23:1",
+      "Lâmpada para os meus pés é a tua palavra. - Salmos 119:105"
     ];
     let index = 0;
     function trocarVersiculo() {
@@ -140,8 +135,7 @@
       index = (index + 1) % versiculos.length;
     }
     trocarVersiculo();
-    setInterval(trocarVersiculo, 7000);
+    setInterval(trocarVersiculo, 8000);
   </script>
 </body>
 </html>
-
