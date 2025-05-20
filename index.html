@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Divina Loja - Produtos com Propósito</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -61,19 +63,6 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .extras {
-      padding: 40px 20px;
-      background-color: #1a1a1a;
-      text-align: center;
-    }
-    .extras h2 {
-      margin-bottom: 20px;
-      font-size: 2rem;
-    }
-    .extras iframe {
-      max-width: 100%;
-      border-radius: 10px;
-    }
     footer {
       text-align: center;
       padding: 20px;
@@ -81,8 +70,19 @@
       background-color: #111;
       color: #ccc;
     }
-    footer img {
-      vertical-align: middle;
+    .contato, .sobre {
+      padding: 20px;
+      text-align: center;
+      background-color: #1a1a1a;
+    }
+    .contato a, .contato i {
+      color: #4CAF50;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    h2 {
+      color: #4CAF50;
     }
   </style>
 </head>
@@ -108,43 +108,36 @@
       <img src="https://ae01.alicdn.com/kf/Sf58505d200c14377ac727ac3dacbba580.jpg" alt="Corrente com Cruz" />
       <a href="https://s.click.aliexpress.com/e/_onMvskI" class="btn" target="_blank">Comprar Aqui</a>
     </div>
+    <div class="produto">
+      <img src="https://cf.shopee.com.br/file/br-11134207-7r98o-ls7zvcydtxqf61" alt="Pulseira com Cruz Ajustável" />
+      <a href="https://s.shopee.com.br/3VXqXlM6Hh" class="btn" target="_blank">Comprar Aqui</a>
+    </div>
   </div>
 
-  <div class="extras">
-    <h2>Nosso Instagram</h2>
-    <iframe src="https://www.instagram.com/jesus_vive_3_3/embed" width="320" height="400" frameborder="0" scrolling="no"></iframe>
-
-    <h2 style="margin-top: 40px;">Fale Conosco</h2>
-    <p>Tem dúvidas ou quer nos chamar no WhatsApp? Clique no botão abaixo:</p>
-    <a href="https://wa.me/551178003757" class="btn" target="_blank">Chamar no WhatsApp</a>
+  <div class="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Somos uma loja com propósito: espalhar a mensagem de fé e esperança por meio de produtos que representam Jesus.</p>
   </div>
 
-  <footer>
-    <p>Site criado para inspirar e abençoar vidas. Divina Loja!</p>
-    <p>
-      <a href="https://wa.me/551178003757" target="_blank" style="color: white; margin: 0 10px;">
-        <img src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp--v1.png" alt="WhatsApp" />
-      </a>
-      <a href="https://www.instagram.com/jesus_vive_3_3" target="_blank" style="color: white; margin: 0 10px;">
-        <img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" />
-      </a>
-    </p>
-  </footer>
+  <div class="contato">
+    <h2>Entre em Contato</h2>
+    <a href="https://wa.me/551178003757" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/jesus_vive_3_3" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+
+  <footer>Site criado para inspirar e abençoar vidas. Divina Loja!</footer>
 
   <script>
     const versiculos = [
-      "Porque vivemos por fé, e não pelo que vemos. - 2 Coríntios 5:7",
-      "O que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé. - 1 João 5:4",
-      "Ora, a fé é a certeza de coisas que se esperam, a convicção de fatos que não se veem. - Hebreus 11:1",
-      "Assim, também a fé, se não tiver obras, por si só está morta. - Tiago 2:17",
-      "Mas o meu justo viverá pela fé. - Hebreus 10:38",
-      "Porque Deus amou o mundo de tal maneira que deu seu Filho unigênito. - João 3:16",
-      "Tudo posso naquele que me fortalece. - Filipenses 4:13",
-      "Façam tudo com amor. - 1 Coríntios 16:14",
-      "Entrega o teu caminho ao Senhor; confia nele, e Ele tudo fará. - Salmos 37:5",
-      "Lâmpada para os meus pés é a tua palavra. - Salmos 119:105",
-      "Dêem graças ao Senhor, porque ele é bom. O seu amor dura para sempre! - Salmos 136:1",
-      "Venham a mim todos vocês que estão cansados e sobrecarregados. - Mateus 11:28"
+      "João 3:16 - Porque Deus amou o mundo de tal maneira...",
+      "Romanos 8:31 - Se Deus é por nós, quem será contra nós?",
+      "Salmos 23:1 - O Senhor é o meu pastor, nada me faltará.",
+      "Filipenses 4:13 - Posso todas as coisas naquele que me fortalece.",
+      "Provérbios 3:5 - Confia no Senhor de todo o teu coração..."
     ];
     let index = 0;
     function trocarVersiculo() {
@@ -152,7 +145,7 @@
       index = (index + 1) % versiculos.length;
     }
     trocarVersiculo();
-    setInterval(trocarVersiculo, 6000);
+    setInterval(trocarVersiculo, 5000);
   </script>
 </body>
 </html>
