@@ -4,22 +4,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jesus Vive - Indicações Cristãs</title>
+  <title>Jesus Vive - Produtos com Propósito</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #101820, #1a1a1a);
+      background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
       color: white;
       text-align: center;
     }
     header {
-      background: url('https://i.imgur.com/eOeV2Fv.jpg') no-repeat center center;
+      background: url('https://i.imgur.com/jRoUkcY.jpg') no-repeat center center;
       background-size: cover;
-      padding: 60px 20px;
-      font-size: 2rem;
+      padding: 70px 20px;
+      font-size: 2.2rem;
       font-weight: bold;
-      text-shadow: 2px 2px 4px #000;
+      text-shadow: 2px 2px 6px #000;
     }
     #versiculo {
       font-size: 1.4rem;
@@ -54,14 +54,10 @@
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background-color: #45a049;
     }
     footer {
-      margin-top: 50px;
-      padding: 15px;
+      margin-top: 40px;
+      padding: 20px;
       background-color: #111;
       font-size: 0.9rem;
     }
@@ -69,66 +65,31 @@
 </head>
 <body>
   <header>Jesus Vive - Produtos com Propósito</header>
+
   <div id="versiculo">Carregando versículo...</div>
 
-  <!-- Produtos -->
   <div class="produto">
-    <a href="https://s.click.aliexpress.com/e/_oEBpi3k" target="_blank">
-      <img src="https://ae01.alicdn.com/kf/Sc5fa190f11c44e4082709f4ea26cd199o.jpg" alt="Produto 1" />
-    </a>
-    <a class="btn" href="https://s.click.aliexpress.com/e/_oEBpi3k" target="_blank">Comprar Aqui</a>
+    <img src="https://ae01.alicdn.com/kf/Sf58505d200c14377ac727ac3dacbba580.jpg" alt="Produto cristão" />
+    <a href="https://s.click.aliexpress.com/e/_onMvskI" target="_blank" class="btn">Comprar Aqui</a>
   </div>
 
-  <div class="produto">
-    <a href="https://s.click.aliexpress.com/e/_oDcukHs" target="_blank">
-      <img src="https://ae01.alicdn.com/kf/Se33cd6492ba24d7b8facb92af662cdb6v.jpg" alt="Produto 2" />
-    </a>
-    <a class="btn" href="https://s.click.aliexpress.com/e/_oDcukHs" target="_blank">Comprar Aqui</a>
-  </div>
-
-  <div class="produto">
-    <a href="https://s.click.aliexpress.com/e/_oDzKk0m" target="_blank">
-      <img src="https://ae01.alicdn.com/kf/S8d37e0f9c82f47babd5ffe8d1327324dE.jpg" alt="Produto 3" />
-    </a>
-    <a class="btn" href="https://s.click.aliexpress.com/e/_oDzKk0m" target="_blank">Comprar Aqui</a>
-  </div>
-
-  <div class="produto">
-    <a href="https://s.click.aliexpress.com/e/_okBItYE" target="_blank">
-      <img src="https://ae01.alicdn.com/kf/Sf58505d200c14377ac727ac3dacbba580.jpg" alt="Produto 4" />
-    </a>
-    <a class="btn" href="https://s.click.aliexpress.com/e/_okBItYE" target="_blank">Comprar Aqui</a>
-  </div>
-
-  <div class="produto">
-    <a href="https://s.click.aliexpress.com/e/_oBQQYQ6" target="_blank">
-      <img src="https://ae01.alicdn.com/kf/Sc5fa190f11c44e4082709f4ea26cd199o.jpg" alt="Produto 5" />
-    </a>
-    <a class="btn" href="https://s.click.aliexpress.com/e/_oBQQYQ6" target="_blank">Comprar Aqui</a>
-  </div>
-
-  <!-- Redes Sociais -->
-  <a class="btn" href="https://www.instagram.com/jesus_vive_3_3" target="_blank">Instagram</a>
-  <a class="btn" href="https://wa.me/" target="_blank">WhatsApp</a>
-
-  <footer>Site criado para inspirar e transformar vidas. Jesus Vive!</footer>
+  <footer>Site criado para edificar e abençoar vidas. Jesus Vive!</footer>
 
   <script>
     const versiculos = [
+      "João 3:16 - Porque Deus amou o mundo de tal maneira...",
       "Romanos 8:31 - Se Deus é por nós, quem será contra nós?",
       "Salmos 23:1 - O Senhor é o meu pastor, nada me faltará.",
       "Filipenses 4:13 - Posso todas as coisas naquele que me fortalece.",
-      "João 3:16 - Porque Deus amou o mundo de tal maneira...",
-      "Provérbios 3:5 - Confie no Senhor de todo o seu coração..."
+      "Provérbios 3:5 - Confia no Senhor de todo o teu coração..."
     ];
-    const versiculoEl = document.getElementById("versiculo");
     let index = 0;
-    function mudarVersiculo() {
-      versiculoEl.textContent = versiculos[index];
+    function trocarVersiculo() {
+      document.getElementById("versiculo").textContent = versiculos[index];
       index = (index + 1) % versiculos.length;
     }
-    setInterval(mudarVersiculo, 5000); // troca a cada 5 segundos
-    mudarVersiculo();
+    trocarVersiculo();
+    setInterval(trocarVersiculo, 5000); // a cada 5 segundos
   </script>
 </body>
 </html>
