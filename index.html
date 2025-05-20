@@ -12,7 +12,7 @@
       color: white;
     }
     header {
-      background: linear-gradient(to right, #3a3a3a, #1a1a1a);
+      background-color: #111;
       padding: 60px 20px;
       text-align: center;
       font-size: 2.5rem;
@@ -61,6 +61,19 @@
       text-decoration: none;
       font-weight: bold;
     }
+    .extras {
+      padding: 40px 20px;
+      background-color: #1a1a1a;
+      text-align: center;
+    }
+    .extras h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .extras iframe {
+      max-width: 100%;
+      border-radius: 10px;
+    }
     footer {
       text-align: center;
       padding: 20px;
@@ -68,19 +81,8 @@
       background-color: #111;
       color: #ccc;
     }
-    .contato {
-      text-align: center;
-      padding: 30px 20px;
-    }
-    .contato a {
-      display: inline-block;
-      margin: 10px;
-      color: #4CAF50;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
-    .contato a:hover {
-      text-decoration: underline;
+    footer img {
+      vertical-align: middle;
     }
   </style>
 </head>
@@ -108,26 +110,41 @@
     </div>
   </div>
 
-  <div class="contato">
-    <h2>Entre em contato</h2>
-    <a href="https://wa.me/551178003757" target="_blank">WhatsApp: (11) 7800-3757</a><br/>
-    <a href="https://www.instagram.com/jesus_vive_3_3" target="_blank">Instagram: @jesus_vive_3_3</a>
+  <div class="extras">
+    <h2>Nosso Instagram</h2>
+    <iframe src="https://www.instagram.com/jesus_vive_3_3/embed" width="320" height="400" frameborder="0" scrolling="no"></iframe>
+
+    <h2 style="margin-top: 40px;">Fale Conosco</h2>
+    <p>Tem dúvidas ou quer nos chamar no WhatsApp? Clique no botão abaixo:</p>
+    <a href="https://wa.me/551178003757" class="btn" target="_blank">Chamar no WhatsApp</a>
   </div>
 
-  <footer>Site criado para inspirar e abençoar vidas. Divina Loja!</footer>
+  <footer>
+    <p>Site criado para inspirar e abençoar vidas. Divina Loja!</p>
+    <p>
+      <a href="https://wa.me/551178003757" target="_blank" style="color: white; margin: 0 10px;">
+        <img src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp--v1.png" alt="WhatsApp" />
+      </a>
+      <a href="https://www.instagram.com/jesus_vive_3_3" target="_blank" style="color: white; margin: 0 10px;">
+        <img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" />
+      </a>
+    </p>
+  </footer>
 
   <script>
     const versiculos = [
       "Porque vivemos por fé, e não pelo que vemos. - 2 Coríntios 5:7",
       "O que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé. - 1 João 5:4",
-      "E, assim, a fé vem pelo ouvir, e o ouvir, pela palavra de Cristo. - Romanos 10:17",
+      "Ora, a fé é a certeza de coisas que se esperam, a convicção de fatos que não se veem. - Hebreus 11:1",
+      "Assim, também a fé, se não tiver obras, por si só está morta. - Tiago 2:17",
       "Mas o meu justo viverá pela fé. - Hebreus 10:38",
-      "Ora, a fé é a certeza de coisas que se esperam. - Hebreus 11:1",
+      "Porque Deus amou o mundo de tal maneira que deu seu Filho unigênito. - João 3:16",
       "Tudo posso naquele que me fortalece. - Filipenses 4:13",
       "Façam tudo com amor. - 1 Coríntios 16:14",
-      "O amor tudo sofre, tudo crê, tudo espera, tudo suporta. - 1 Coríntios 13:7",
-      "O Senhor é o meu pastor; nada me faltará. - Salmos 23:1",
-      "Lâmpada para os meus pés é a tua palavra. - Salmos 119:105"
+      "Entrega o teu caminho ao Senhor; confia nele, e Ele tudo fará. - Salmos 37:5",
+      "Lâmpada para os meus pés é a tua palavra. - Salmos 119:105",
+      "Dêem graças ao Senhor, porque ele é bom. O seu amor dura para sempre! - Salmos 136:1",
+      "Venham a mim todos vocês que estão cansados e sobrecarregados. - Mateus 11:28"
     ];
     let index = 0;
     function trocarVersiculo() {
@@ -135,7 +152,7 @@
       index = (index + 1) % versiculos.length;
     }
     trocarVersiculo();
-    setInterval(trocarVersiculo, 8000);
+    setInterval(trocarVersiculo, 6000);
   </script>
 </body>
 </html>
