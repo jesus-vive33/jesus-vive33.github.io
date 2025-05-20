@@ -2,8 +2,9 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Divina Loja - Produtos com Propósito</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -12,34 +13,22 @@
       color: white;
     }
     header {
-      background: url('https://cdn.pixabay.com/photo/2017/05/16/11/17/cross-2310355_1280.jpg') center center/cover no-repeat;
+      background: url('https://i.imgur.com/jRoUkcY.jpg') center center/cover no-repeat;
       padding: 60px 20px;
       text-align: center;
       font-size: 2.5rem;
       font-weight: bold;
       text-shadow: 2px 2px 8px #000;
     }
-    header img {
-      width: 60px;
-      vertical-align: middle;
-      margin-right: 10px;
-    }
-    .subtitulo {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      text-align: center;
-      color: #ccc;
-    }
     #versiculo {
       font-size: 1.4rem;
       margin: 30px auto;
-      padding: 15px 20px;
+      padding: 10px 20px;
       max-width: 90%;
       background-color: #222;
       border-left: 5px solid #4CAF50;
       border-radius: 5px;
       text-align: center;
-      transition: opacity 0.5s ease-in-out;
     }
     .produtos {
       display: flex;
@@ -72,82 +61,87 @@
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s;
     }
-    .btn:hover {
-      background-color: #45a049;
+    .contato {
+      background: #111;
+      padding: 30px;
+      text-align: center;
+    }
+    .contato a {
+      display: inline-block;
+      margin: 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    .contato a i {
+      margin-right: 8px;
+      color: #4CAF50;
     }
     footer {
       text-align: center;
       padding: 20px;
-      font-size: 0.95rem;
-      background-color: #111;
+      font-size: 0.9rem;
+      background-color: #000;
       color: #ccc;
-    }
-    @media (max-width: 600px) {
-      .btn {
-        width: 100%;
-        max-width: 220px;
-      }
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <img src="https://cdn-icons-png.flaticon.com/512/3448/3448336.png" alt="logo">
-    Divina Loja - Produtos com Propósito
-  </header>
-
-  <p class="subtitulo">Inspire sua fé através de cada detalhe.</p>
+  <header>Divina Loja - Produtos com Propósito</header>
 
   <div id="versiculo">Carregando versículo...</div>
 
   <div class="produtos">
     <div class="produto">
       <img src="https://ae01.alicdn.com/kf/Sc5fa190f11c44e4082709f4ea26cd199o.jpg" alt="Camiseta Jesus" />
-      <a href="https://s.click.aliexpress.com/e/_oEBpi3k" class="btn" target="_blank">🛒 Comprar Aqui</a>
+      <a href="https://s.click.aliexpress.com/e/_oEBpi3k" class="btn" target="_blank">Comprar Aqui</a>
     </div>
     <div class="produto">
       <img src="https://ae01.alicdn.com/kf/Se33cd6492ba24d7b8facb92af662cdb6v.jpg" alt="Camiseta Jesus é minha vida" />
-      <a href="https://s.click.aliexpress.com/e/_okBItYE" class="btn" target="_blank">🛒 Comprar Aqui</a>
+      <a href="https://s.click.aliexpress.com/e/_okBItYE" class="btn" target="_blank">Comprar Aqui</a>
     </div>
     <div class="produto">
       <img src="https://ae01.alicdn.com/kf/S8d37e0f9c82f47babd5ffe8d1327324dE.jpg" alt="Pingente Cruz" />
-      <a href="https://s.click.aliexpress.com/e/_ooGP0Lc" class="btn" target="_blank">🛒 Comprar Aqui</a>
+      <a href="https://s.click.aliexpress.com/e/_ooGP0Lc" class="btn" target="_blank">Comprar Aqui</a>
     </div>
     <div class="produto">
       <img src="https://ae01.alicdn.com/kf/Sf58505d200c14377ac727ac3dacbba580.jpg" alt="Corrente com Cruz" />
-      <a href="https://s.click.aliexpress.com/e/_onMvskI" class="btn" target="_blank">🛒 Comprar Aqui</a>
+      <a href="https://s.click.aliexpress.com/e/_onMvskI" class="btn" target="_blank">Comprar Aqui</a>
     </div>
   </div>
 
+  <div class="contato">
+    <h2>Fale Conosco</h2>
+    <a href="https://wa.me/551178003757" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a href="https://www.instagram.com/jesus_vive_3_3" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+  </div>
+
   <footer>
-    <p>✨ Site criado para inspirar e abençoar vidas.</p>
-    <p>🙏 Que Deus te abençoe!</p>
+    Site criado para inspirar e abençoar vidas. Divina Loja!
   </footer>
 
   <script>
     const versiculos = [
-      "📖 João 3:16 - Porque Deus amou o mundo de tal maneira...",
-      "🙏 Romanos 8:31 - Se Deus é por nós, quem será contra nós?",
-      "✝️ Salmos 23:1 - O Senhor é o meu pastor, nada me faltará.",
-      "🙌 Filipenses 4:13 - Posso todas as coisas naquele que me fortalece.",
-      "💖 Provérbios 3:5 - Confia no Senhor de todo o teu coração..."
+      "Porque vivemos por fé, e não pelo que vemos. - 2 Coríntios 5:7",
+      "O que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé. - 1 João 5:4",
+      "E, assim, a fé vem pelo ouvir, e o ouvir, pela palavra de Cristo. - Romanos 10:17",
+      "Ora, a fé é a certeza de coisas que se esperam, a convicção de fatos que não se veem. - Hebreus 11:1",
+      "Tudo posso naquele que me fortalece. - Filipenses 4:13",
+      "O amor tudo sofre, tudo crê, tudo espera, tudo suporta. - 1 Coríntios 13:7",
+      "Nisto todos conhecerão que vocês são meus discípulos: se tiverem amor uns aos outros. - João 13:35",
+      "Entregue suas aflições ao Senhor , e ele cuidará de você. - Salmos 55:22",
+      "Arrependam-se, pois, e voltem-se para Deus. - Atos 3:19",
+      "Esta é minha ordem: Seja forte e corajoso! - Josué 1:9"
     ];
     let index = 0;
     function trocarVersiculo() {
-      const versiculo = document.getElementById("versiculo");
-      versiculo.style.opacity = 0;
-      setTimeout(() => {
-        versiculo.textContent = versiculos[index];
-        versiculo.style.opacity = 1;
-        index = (index + 1) % versiculos.length;
-      }, 500);
+      document.getElementById("versiculo").textContent = versiculos[index];
+      index = (index + 1) % versiculos.length;
     }
     trocarVersiculo();
-    setInterval(trocarVersiculo, 8000);
+    setInterval(trocarVersiculo, 7000);
   </script>
-
 </body>
 </html>
+
