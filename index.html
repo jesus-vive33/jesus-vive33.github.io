@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Divina Loja - Produtos com Propósito</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
       color: white;
-      scroll-behavior: smooth;
     }
     header {
       background: url('https://i.imgur.com/jRoUkcY.jpg') center center/cover no-repeat;
@@ -24,12 +24,13 @@
     #versiculo {
       font-size: 1.4rem;
       margin: 30px auto;
-      padding: 10px 20px;
+      padding: 15px 25px;
       max-width: 90%;
       background-color: #222;
       border-left: 5px solid #4CAF50;
-      border-radius: 5px;
+      border-radius: 8px;
       text-align: center;
+      box-shadow: 0 0 12px rgba(0,0,0,0.4);
     }
     .produtos {
       display: flex;
@@ -45,6 +46,10 @@
       width: 300px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
       text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .produto:hover {
+      transform: scale(1.03);
     }
     .produto img {
       width: 100%;
@@ -62,50 +67,9 @@
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
+      transition: background 0.3s ease;
     }
-    .versiculos {
-      max-width: 90%;
-      margin: 40px auto;
-      background-color: #1c1c1c;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 10px #000;
-    }
-    .versiculos h2 {
-      color: #4CAF50;
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
-      margin-top: 30px;
-      font-size: 1.6rem;
-    }
-    .versiculos p {
-      margin: 10px 0;
-      line-height: 1.6;
-    }
-    .versiculo-texto {
-      font-style: italic;
-    }
-    .referencia {
-      display: block;
-      font-weight: bold;
-      color: #8bc34a;
-      margin-top: 5px;
-    }
-    #topo {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 45px;
-      height: 45px;
-      font-size: 22px;
-      cursor: pointer;
-      box-shadow: 0 0 10px #000;
-    }
-    #topo:hover {
+    .btn:hover {
       background-color: #45a049;
     }
     footer {
@@ -115,81 +79,79 @@
       background-color: #111;
       color: #ccc;
     }
+    .btn-voltar {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      z-index: 1000;
+    }
   </style>
 </head>
 <body>
-
-  <header id="inicio">Divina Loja - Produtos com Propósito</header>
+  <header>Divina Loja - Produtos com Propósito</header>
 
   <div id="versiculo">Carregando versículo...</div>
 
   <div class="produtos">
     <div class="produto">
       <img src="https://ae01.alicdn.com/kf/Sc5fa190f11c44e4082709f4ea26cd199o.jpg" alt="Camiseta Jesus" />
-      <a href="https://s.click.aliexpress.com/e/_oEBpi3k" class="btn" target="_blank">Comprar Aqui</a>
+      <a href="https://s.click.aliexpress.com/e/_oEBpi3k" class="btn" target="_blank"><i class="fas fa-shopping-cart"></i> Comprar Aqui</a>
     </div>
     <div class="produto">
       <img src="https://ae01.alicdn.com/kf/Se33cd6492ba24d7b8facb92af662cdb6v.jpg" alt="Camiseta Jesus é minha vida" />
-      <a href="https://s.click.aliexpress.com/e/_okBItYE" class="btn" target="_blank">Comprar Aqui</a>
+      <a href="https://s.click.aliexpress.com/e/_okBItYE" class="btn" target="_blank"><i class="fas fa-shopping-cart"></i> Comprar Aqui</a>
     </div>
     <div class="produto">
       <img src="https://ae01.alicdn.com/kf/S8d37e0f9c82f47babd5ffe8d1327324dE.jpg" alt="Pingente Cruz" />
-      <a href="https://s.click.aliexpress.com/e/_ooGP0Lc" class="btn" target="_blank">Comprar Aqui</a>
+      <a href="https://s.click.aliexpress.com/e/_ooGP0Lc" class="btn" target="_blank"><i class="fas fa-shopping-cart"></i> Comprar Aqui</a>
     </div>
     <div class="produto">
       <img src="https://ae01.alicdn.com/kf/Sf58505d200c14377ac727ac3dacbba580.jpg" alt="Corrente com Cruz" />
-      <a href="https://s.click.aliexpress.com/e/_onMvskI" class="btn" target="_blank">Comprar Aqui</a>
+      <a href="https://s.click.aliexpress.com/e/_onMvskI" class="btn" target="_blank"><i class="fas fa-shopping-cart"></i> Comprar Aqui</a>
     </div>
   </div>
 
-  <div class="versiculos">
-    <h2>🕊️ Fé</h2>
-    <p><span class="versiculo-texto">Porque vivemos por fé, e não pelo que vemos.</span><span class="referencia">2 Coríntios 5:7</span></p>
-    <p><span class="versiculo-texto">O que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé.</span><span class="referencia">1 João 5:4</span></p>
-    <p><span class="versiculo-texto">E, assim, a fé vem pelo ouvir, e o ouvir, pela palavra de Cristo.</span><span class="referencia">Romanos 10:17</span></p>
-    <p><span class="versiculo-texto">Assim, também a fé, se não tiver obras, por si só está morta.</span><span class="referencia">Tiago 2:17</span></p>
-    <p><span class="versiculo-texto">Mas o meu justo viverá pela fé. E, se retroceder, não me agradarei dele.</span><span class="referencia">Hebreus 10:38</span></p>
-    <p><span class="versiculo-texto">Pela graça sois salvos, mediante a fé.</span><span class="referencia">Efésios 2:8</span></p>
-    <p><span class="versiculo-texto">Ora, a fé é a certeza de coisas que se esperam.</span><span class="referencia">Hebreus 11:1</span></p>
-
-    <h2>❤️ Amor</h2>
-    <p><span class="versiculo-texto">Façam tudo com amor.</span><span class="referencia">1 Coríntios 16:14</span></p>
-    <p><span class="versiculo-texto">Quem não ama não conhece a Deus, porque Deus é amor.</span><span class="referencia">1 João 4:8</span></p>
-    <p><span class="versiculo-texto">Ame o Senhor de todo o seu coração, alma, entendimento e forças.</span><span class="referencia">Marcos 12:30</span></p>
-    <p><span class="versiculo-texto">Amem-se uns aos outros como eu os amei.</span><span class="referencia">João 15:12</span></p>
-
-    <h2>🙏 Confiança em Deus</h2>
-    <p><span class="versiculo-texto">O Senhor é o meu pastor; nada me faltará.</span><span class="referencia">Salmos 23:1</span></p>
-    <p><span class="versiculo-texto">Entrega o teu caminho ao Senhor; confia nele, e Ele tudo fará.</span><span class="referencia">Salmos 37:5</span></p>
-
-    <h2>🙌 Gratidão</h2>
-    <p><span class="versiculo-texto">Celebrai com júbilo ao Senhor, todos os moradores da terra.</span><span class="referencia">Salmos 100:1</span></p>
-    <p><span class="versiculo-texto">Deem graças ao Senhor, porque ele é bom.</span><span class="referencia">Salmos 136:1</span></p>
-
-    <h2>🌱 Esperança</h2>
-    <p><span class="versiculo-texto">E eu, Senhor, que espero? Tu és a minha esperança.</span><span class="referencia">Salmos 39:7</span></p>
-
-    <h2>✝️ Salvação</h2>
-    <p><span class="versiculo-texto">Porque Deus amou o mundo de tal maneira que deu seu Filho unigênito.</span><span class="referencia">João 3:16</span></p>
-    <p><span class="versiculo-texto">Arrependam-se e voltem-se para Deus, para que os seus pecados sejam cancelados.</span><span class="referencia">Atos 3:19</span></p>
-
-    <h2>💪 Força</h2>
-    <p><span class="versiculo-texto">Tudo posso naquele que me fortalece.</span><span class="referencia">Filipenses 4:13</span></p>
-    <p><span class="versiculo-texto">Seja forte e corajoso! O Senhor está com você.</span><span class="referencia">Josué 1:9</span></p>
-  </div>
+  <a href="#" class="btn-voltar" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></a>
 
   <footer>Site criado para inspirar e abençoar vidas. Divina Loja!</footer>
 
-  <!-- Botão Voltar ao Topo -->
-  <button id="topo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
-
   <script>
     const versiculos = [
-      "João 3:16 - Porque Deus amou o mundo de tal maneira...",
-      "Romanos 8:31 - Se Deus é por nós, quem será contra nós?",
-      "Salmos 23:1 - O Senhor é o meu pastor, nada me faltará.",
-      "Filipenses 4:13 - Posso todas as coisas naquele que me fortalece.",
-      "Provérbios 3:5 - Confia no Senhor de todo o teu coração..."
+      "Porque vivemos por fé, e não pelo que vemos. - 2 Coríntios 5:7",
+      "O que é nascido de Deus vence o mundo... - 1 João 5:4",
+      "E, assim, a fé vem pelo ouvir... - Romanos 10:17",
+      "A fé, se não tiver obras, por si só está morta. - Tiago 2:17",
+      "Mas o meu justo viverá pela fé... - Hebreus 10:38",
+      "Porque pela graça vocês são salvos... - Efésios 2:8",
+      "Ora, a fé é a certeza de coisas que se esperam... - Hebreus 11:1",
+      "Tendo sido justificados pela fé, temos paz com Deus... - Romanos 5:1",
+      "Há um só Senhor, uma só fé... - Efésios 4:5-6",
+      "Tudo posso naquele que me fortalece. - Filipenses 4:13",
+      "Façam tudo com amor. - 1 Coríntios 16:14",
+      "Quem ama a Deus, ame também seu irmão. - 1 João 4:21",
+      "Quem não ama não conhece a Deus... - 1 João 4:8",
+      "Ame o Senhor de todo o seu coração... - Marcos 12:30",
+      "O amor tudo sofre... - 1 Coríntios 13:7",
+      "Permanece a fé, a esperança e o amor... - 1 Coríntios 13:13",
+      "O Senhor é o meu pastor; nada me faltará. - Salmos 23:1",
+      "Entrega o teu caminho ao Senhor... - Salmos 37:5",
+      "Celebrai com júbilo ao Senhor... - Salmos 100:1",
+      "Dêem graças ao Senhor, porque ele é bom... - Salmos 136:1",
+      "Tenho-vos dito isso, para que em mim tenhais paz... - João 16:33",
+      "Arrependam-se, pois, e voltem-se para Deus... - Atos 3:19",
+      "Se confessarmos os nossos pecados... - 1 João 1:9",
+      "Tudo o que fizerem, façam de todo o coração... - Colossenses 3:23",
+      "Sejam fortes e corajosos... - Salmos 31:24",
+      "Pois não me envergonho do evangelho... - Romanos 1:16",
+      "Esta é minha ordem: Seja forte e corajoso! - Josué 1:9"
     ];
     let index = 0;
     function trocarVersiculo() {
@@ -197,7 +159,8 @@
       index = (index + 1) % versiculos.length;
     }
     trocarVersiculo();
-    setInterval(trocarVersiculo, 5000);
+    setInterval(trocarVersiculo, 8000);
   </script>
 </body>
 </html>
+
