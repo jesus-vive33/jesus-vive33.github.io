@@ -1,165 +1,120 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jesus Vive Indica</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesus Vive - Indicações Cristãs</title>
   <style>
     body {
-      background-color: #000;
-      color: #fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
       margin: 0;
-      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #111, #222);
+      color: white;
       text-align: center;
     }
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #ff69b4;
-    }
-
-    #versiculo {
-      font-size: 1.2em;
-      margin: 20px 0;
-      padding: 15px;
-      border-left: 4px solid #4caf50;
-      width: 90%;
-      max-width: 500px;
-      background-color: #111;
-      border-radius: 8px;
-    }
-
-    .product {
-      margin: 30px 0;
-      background-color: #111;
+    header {
       padding: 20px;
+      background-color: #1a1a1a;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    #versiculo {
+      font-size: 1.2rem;
+      margin: 20px;
+    }
+    .produto {
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #2a2a2a;
       border-radius: 10px;
       width: 90%;
       max-width: 400px;
     }
-
-    .product img {
+    .produto img {
       width: 100%;
-      max-width: 150px;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 15px;
+      border-radius: 10px;
     }
-
-    .product h2 {
-      font-size: 1.1em;
-      margin-bottom: 10px;
-    }
-
-    .product a {
+    .btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background-color: #ff69b4;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .product a:hover {
-      background-color: #ff1493;
-    }
-
-    .buttons {
-      margin: 20px 0;
-    }
-
-    .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      border-radius: 25px;
-      font-size: 1em;
-      font-weight: bold;
-      text-decoration: none;
+      margin: 10px 5px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
       color: white;
-      transition: background-color 0.3s ease;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
-
-    .instagram {
-      background-color: #ff69b4;
-    }
-
-    .instagram:hover {
-      background-color: #ff1493;
-    }
-
-    .whatsapp {
-      background-color: #4caf50;
-    }
-
-    .whatsapp:hover {
-      background-color: #43a047;
-    }
-
     footer {
       margin-top: 40px;
-      font-size: 0.9em;
-      color: #aaa;
+      padding: 10px;
+      background-color: #111;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-
-  <h1>Jesus Vive Indica</h1>
-
+  <header>Jesus Vive - Indicações Cristãs</header>
   <div id="versiculo">Carregando versículo...</div>
 
-  <div class="product">
-    <img src="https://ae01.alicdn.com/kf/S5bb6c60b9f464374b1f8079b1e68c932T.jpg_80x80.jpg " alt="Produto Recomendado">
-    <h2>Produto Recomendado</h2>
-    <a href="https://s.click.aliexpress.com/e/_olkBqRD " target="_blank">Comprar Aqui</a>
-    <br/>
-    <a href="https://s.click.aliexpress.com/e/_oDzyWOP " target="_blank">Opção Alternativa</a>
+  <!-- Produtos -->
+  <div class="produto">
+    <a href="https://s.click.aliexpress.com/e/_oEBpi3k" target="_blank">
+      <img src="//ae01.alicdn.com/kf/Sc5fa190f11c44e4082709f4ea26cd199o.jpg_500x500.jpg" alt="Produto 1">
+    </a>
+    <a class="btn" href="https://s.click.aliexpress.com/e/_oEBpi3k" target="_blank">Comprar Aqui</a>
   </div>
 
-  <div class="buttons">
-    <a href="https://www.instagram.com/jesusvive33 " target="_blank" class="instagram">Instagram</a>
-    <a href="https://wa.me/5511978003757 " target="_blank" class="whatsapp">WhatsApp</a>
+  <div class="produto">
+    <a href="https://s.click.aliexpress.com/e/_oDcukHs" target="_blank">
+      <img src="//ae01.alicdn.com/kf/Se33cd6492ba24d7b8facb92af662cdb6v.jpg_500x500.jpg" alt="Produto 2">
+    </a>
+    <a class="btn" href="https://s.click.aliexpress.com/e/_oDcukHs" target="_blank">Comprar Aqui</a>
   </div>
 
-  <footer>
-    Site criado para edificar e ajudar. Jesus Vive!
-  </footer>
+  <div class="produto">
+    <a href="https://s.click.aliexpress.com/e/_oDzKk0m" target="_blank">
+      <img src="//ae01.alicdn.com/kf/S8d37e0f9c82f47babd5ffe8d1327324dE.jpg_500x500.jpg" alt="Produto 3">
+    </a>
+    <a class="btn" href="https://s.click.aliexpress.com/e/_oDzKk0m" target="_blank">Comprar Aqui</a>
+  </div>
+
+  <div class="produto">
+    <a href="https://s.click.aliexpress.com/e/_okBItYE" target="_blank">
+      <img src="//ae01.alicdn.com/kf/Sf58505d200c14377ac727ac3dacbba580.jpg_500x500.jpg" alt="Produto 4">
+    </a>
+    <a class="btn" href="https://s.click.aliexpress.com/e/_okBItYE" target="_blank">Comprar Aqui</a>
+  </div>
+
+  <div class="produto">
+    <a href="https://s.click.aliexpress.com/e/_oBQQYQ6" target="_blank">
+      <img src="//ae01.alicdn.com/kf/Sc5fa190f11c44e4082709f4ea26cd199o.jpg_500x500.jpg" alt="Produto 5">
+    </a>
+    <a class="btn" href="https://s.click.aliexpress.com/e/_oBQQYQ6" target="_blank">Comprar Aqui</a>
+  </div>
+
+  <!-- Redes Sociais -->
+  <a class="btn" href="https://www.instagram.com/jesus_vive_3_3" target="_blank">Instagram</a>
+  <a class="btn" href="https://wa.me/" target="_blank">WhatsApp</a>
+
+  <footer>Site criado para edificar e ajudar. Jesus Vive!</footer>
 
   <script>
     const versiculos = [
-      "João 3:16 - Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna.",
-      "Salmo 23:1 - O Senhor é o meu pastor; nada me faltará.",
-      "Romanos 8:31 - Se Deus é por nós, quem será contra nós?"
+      "Romanos 8:31 - Se Deus é por nós, quem será contra nós?",
+      "Salmos 23:1 - O Senhor é o meu pastor, nada me faltará.",
+      "Filipenses 4:13 - Posso todas as coisas naquele que me fortalece.",
+      "João 3:16 - Porque Deus amou o mundo de tal maneira...",
+      "Provérbios 3:5 - Confie no Senhor de todo o seu coração..."
     ];
-
-    let indiceAtual = 0;
-
-    function mostrarVersiculo() {
-      const elemento = document.getElementById("versiculo");
-      elemento.style.opacity = 0;
-      setTimeout(() => {
-        elemento.textContent = versiculos[indiceAtual];
-        elemento.style.opacity = 1;
-        indiceAtual = (indiceAtual + 1) % versiculos.length;
-      }, 500);
+    const versiculoEl = document.getElementById("versiculo");
+    function mudarVersiculo() {
+      const index = Math.floor(Math.random() * versiculos.length);
+      versiculoEl.textContent = versiculos[index];
     }
-
-    // Mostrar primeiro versículo
-    mostrarVersiculo();
-
-    // Trocar versículo a cada 10 segundos
-    setInterval(mostrarVersiculo, 10000);
+    setInterval(mudarVersiculo, 1000);
+    mudarVersiculo();
   </script>
 </body>
 </html>
